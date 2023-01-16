@@ -5,6 +5,10 @@
 const questions = document.querySelector("#questions");
 const startTimer = document.querySelector("#start");
 const timer = document.querySelector("#time");
+const questionList = document.querySelector(".questionList");
+
+
+
 
 // Clicking the "Start Quiz" button starts the timer and reveals the questions.
 
@@ -25,3 +29,16 @@ document.querySelector("#start").addEventListener("click", function() {
 }
 });
 
+// Button clicked in answer to question.
+document.querySelector(".qzbtn").addEventListener("click", function() {
+    console.log("Button clicked");
+});
+
+// Places the question.
+document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[0];
+
+// Places the four answer options on the buttons.
+
+for (let i = 0; i < 4; i++) {
+    document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[0][i];
+};
