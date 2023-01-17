@@ -13,28 +13,6 @@ let answer;
 let score;
 let highScores = [];
 
-for (var i = 0; i < buttonClicked.length; i++) {
-  buttonClicked[i].addEventListener("click", function() {
-    if (this.innerText === "Object-Oriented") {
-        answer = "correct";
-        console.log(answer);
-        if (answer === "correct") {
-            // questions.classList.add("hide");
-            questionArray()
-        }
-  }
-}
-)};
-
-function questionArray() {
-    // for (let i = 0; i < quizQuestions.length; i++) {
-    //     quizQuestions = quizQuestions[i]
-    // }
-    // questions.classList.remove("hide");
-    console.log("Question Array");
-}  
-
-
 // Clicking the "Start Quiz" button starts the timer and reveals the questions.
 
 document.querySelector("#start").addEventListener("click", function () {
@@ -59,6 +37,7 @@ document.querySelector("#start").addEventListener("click", function () {
     }
 });
 console.log(highScores);
+
 // Places the question and the four possible answers.
 
 function allQuestions() {
@@ -67,9 +46,28 @@ function allQuestions() {
     for (let i = 0; i < 4; i++) {
         document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[0][i];
     };
-    
-}
 
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", doSomething, false);
+    function doSomething(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            alert("Hello " + clickedItem);
+            }
+    }
+// Iterate through the list of possible answers.
+
+    // for (var i = 0; i < buttonClicked.length; i++) {
+    //     buttonClicked[i].addEventListener("click", function() {
+    //       if (this.innerText === "Object-Oriented") {
+    //           answer = "correct";
+    //           console.log(answer);
+    //     } else {
+    //         console.log("Incorrect");
+    //     }
+    //   }
+    //   )};   
+}
 
 
 document.querySelector(".qzbtn").addEventListener("click", function () {
