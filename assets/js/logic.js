@@ -42,7 +42,7 @@ document.querySelector("#start").addEventListener("click", function () {
 });
 console.log(highScores);
 
-// Places the question and the four possible answers.
+// Places the question and the four possible answers. Then go to the end screen.
 
 function allQuestions() {
     document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[0];
