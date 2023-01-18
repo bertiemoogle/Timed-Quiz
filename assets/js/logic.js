@@ -10,6 +10,8 @@ const timer = document.querySelector("#time");
 const questionList = document.querySelector(".questionList");
 const answers = ["a", "c", "c", "a", "d", "a", "c", "a", "b", "a"];
 let buttonClicked = document.querySelectorAll(".qzbtn");
+let finalScore = document.querySelector("#final-score");
+let initials = document.querySelector("#initials").textContent;
 let timeLeft;
 let answer;
 let score;
