@@ -49,8 +49,8 @@ function allQuestions() {
     };
 
     let theParent = document.querySelector("#questions");
-    theParent.addEventListener("click", doSomething, false);
-    function doSomething(e) {
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
         if (e.target !== e.currentTarget) {
             let clickedItem = e.target.id;
             console.log(clickedItem);
@@ -58,23 +58,205 @@ function allQuestions() {
 
         if (e.target.id === answers[0]) {
             console.log("OK");
+            allQuestions2()
         }
     }
-// Iterate through the list of possible answers.
 
-    // for (var i = 0; i < buttonClicked.length; i++) {
-    //     buttonClicked[i].addEventListener("click", function() {
-    //       if (this.innerText === "Object-Oriented") {
-    //           answer = "correct";
-    //           console.log(answer);
-    //     } else {
-    //         console.log("Incorrect");
-    //     }
-    //   }
-    //   )};   
+function allQuestions2() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[1];
+
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[1][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[2]) {
+            console.log("OK");
+            allQuestions3()
+        }
+    }
+}
 }
 
+function allQuestions3() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[2];
 
-document.querySelector(".qzbtn").addEventListener("click", function () {
-        
-});
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[2][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[2]) {
+            console.log("OK");
+            allQuestions4()
+        }
+    }
+}
+
+function allQuestions4() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[3];
+
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[3][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[0]) {
+            console.log("OK");
+            allQuestions5()
+        }
+    }
+}
+
+function allQuestions5() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[4];
+
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[4][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[2]) {
+            console.log("OK");
+            allQuestions6()
+        }
+    }
+}
+
+function allQuestions6() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[5];
+
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[5][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[0]) {
+            console.log("OK");
+            allQuestions7()
+        }
+    }
+}
+
+function allQuestions7() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[6];
+
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[6][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[2]) {
+            console.log("OK");
+            allQuestions8()
+        }
+    }
+}
+
+function allQuestions8() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[7];
+
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[7][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[0]) {
+            console.log("OK");
+            allQuestions9()
+        }
+    }
+}
+
+function allQuestions9() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[8];
+
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[8][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[2]) {
+            console.log("OK");
+            allQuestions10()
+        }
+    }
+}
+
+function allQuestions10() {
+    document.querySelector("#question-title").textContent = Object.keys(quizQuestions)[9];
+
+    for (let i = 0; i < 4; i++) {
+        document.querySelectorAll(".qzbtn")[i].textContent = Object.values(quizQuestions)[9][i];
+    };
+
+    let theParent = document.querySelector("#questions");
+    theParent.addEventListener("click", clickBox, false);
+    function clickBox(e) {
+        if (e.target !== e.currentTarget) {
+            let clickedItem = e.target.id;
+            console.log(clickedItem);
+            }
+
+        if (e.target.id === answers[0]) {
+            console.log("OK");
+            questions.classList.add("hide");
+        }
+    }
+}
