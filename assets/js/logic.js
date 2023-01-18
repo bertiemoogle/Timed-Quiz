@@ -3,6 +3,7 @@
 // Declare variables and the elements they will be affecting.
 
 const startScreen = document.querySelector("#start-screen");
+const endScreen = document.querySelector("#end-screen");
 const questions = document.querySelector("#questions");
 const startTimer = document.querySelector("#start");
 const timer = document.querySelector("#time");
@@ -59,7 +60,7 @@ function allQuestions() {
         if (e.target.id === answers[0]) {
             console.log("OK");
             allQuestions2()
-        }
+        } 
     }
 
 function allQuestions2() {
@@ -257,6 +258,7 @@ function allQuestions10() {
         if (e.target.id === answers[0]) {
             console.log("OK");
             questions.classList.add("hide");
+            endScreen.classList.remove("hide");
         }
     }
 }
