@@ -7,6 +7,7 @@ const questions = document.querySelector("#questions");
 const startTimer = document.querySelector("#start");
 const timer = document.querySelector("#time");
 const questionList = document.querySelector(".questionList");
+const answers = ["a", "c", "c", "a", "d", "a", "c", "a", "b", "a"];
 let buttonClicked = document.querySelectorAll(".qzbtn");
 let timeLeft;
 let answer;
@@ -52,8 +53,12 @@ function allQuestions() {
     function doSomething(e) {
         if (e.target !== e.currentTarget) {
             let clickedItem = e.target.id;
-            alert("Hello " + clickedItem);
+            console.log(clickedItem);
             }
+
+        if (e.target.id === answers[0]) {
+            console.log("OK");
+        }
     }
 // Iterate through the list of possible answers.
 
