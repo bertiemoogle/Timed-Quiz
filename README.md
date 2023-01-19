@@ -1,6 +1,6 @@
 # Timed-Quiz
 
-![screenshot](./assets/images/screenshot.jpg>)
+![screenshot](./assets/images/screenshot.jpg)
 
 I have a feeling I must have overcomplicated this because the amount of code seems a bit excessive for what it is I've actually been building. Despite spending every waking moment trying to make it work it was still incomplete at the time of submission. I will continue to work on it and will resubmit when it is complete. But of course there is now a new challenge to work on which will probably be just as time-consuming. 
 
