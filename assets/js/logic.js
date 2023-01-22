@@ -13,7 +13,7 @@ let buttonClicked = document.querySelectorAll(".qzbtn");
 let finalScore = document.querySelector("#final-score");
 let initials = document.querySelector("#initials").textContent;
 let timeLeft;
-let answer;
+let answer = "";
 let score;
 let highScores = [];
 
@@ -34,13 +34,9 @@ document.querySelector("#start").addEventListener("click", function () {
         } else {
             time.innerHTML = timeLeft;
             timeLeft--;
-            score = timeLeft;
-            highScores.push(score);
-            
         }
     }
 });
-console.log(highScores);
 
 // Places the question and the four possible answers. Then go to the end screen.
 
@@ -60,9 +56,12 @@ function allQuestions() {
             }
 
         if (e.target.id === answers[0]) {
-            console.log("OK");
             allQuestions2()
-        } 
+            
+        } else {
+            allQuestions2();
+        }
+        
     }
 
 function allQuestions2() {
@@ -81,8 +80,9 @@ function allQuestions2() {
             }
 
         if (e.target.id === answers[2]) {
-            console.log("OK");
             allQuestions3()
+        } else {
+            allQuestions3();
         }
     }
 }
@@ -104,8 +104,9 @@ function allQuestions3() {
             }
 
         if (e.target.id === answers[2]) {
-            console.log("OK");
             allQuestions4()
+        } else {
+            allQuestions4();
         }
     }
 }
@@ -126,8 +127,9 @@ function allQuestions4() {
             }
 
         if (e.target.id === answers[0]) {
-            console.log("OK");
             allQuestions5()
+        } else {
+            allQuestions5();
         }
     }
 }
@@ -148,8 +150,9 @@ function allQuestions5() {
             }
 
         if (e.target.id === answers[2]) {
-            console.log("OK");
             allQuestions6()
+        } else {
+            allQuestions6();
         }
     }
 }
@@ -170,8 +173,9 @@ function allQuestions6() {
             }
 
         if (e.target.id === answers[0]) {
-            console.log("OK");
             allQuestions7()
+        } else {
+            allQuestions7();
         }
     }
 }
@@ -192,8 +196,9 @@ function allQuestions7() {
             }
 
         if (e.target.id === answers[2]) {
-            console.log("OK");
             allQuestions8()
+        }  else {
+            allQuestions8();
         }
     }
 }
@@ -214,8 +219,9 @@ function allQuestions8() {
             }
 
         if (e.target.id === answers[0]) {
-            console.log("OK");
             allQuestions9()
+        } else {
+            allQuestions9();
         }
     }
 }
@@ -236,8 +242,9 @@ function allQuestions9() {
             }
 
         if (e.target.id === answers[2]) {
-            console.log("OK");
             allQuestions10()
+        } else {
+            allQuestions10();
         }
     }
 }
@@ -258,7 +265,9 @@ function allQuestions10() {
             }
 
         if (e.target.id === answers[0]) {
-            console.log("OK");
+            questions.classList.add("hide");
+            endScreen.classList.remove("hide");
+        } else {
             questions.classList.add("hide");
             endScreen.classList.remove("hide");
         }
